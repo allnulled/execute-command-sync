@@ -7,7 +7,7 @@ This is a module for Node.js that will let you run console commands redirecting 
 
 ## 2. Installation
 
-Download the repository and import the `index.js` file normally:
+Download the repository (preferably from NPM, but alternatively you can import the `index.js` file):
 
 	const executeCommand = require("execute-command-sync");
 
