@@ -19,7 +19,13 @@ Import in your code the module:
 
 Start using the command like this:
 
-	const output = executeCommand("ls -lA");
+	executeCommand("ls -lA");
+
+	// You can do things here after the execution has finished
+
+	// The results will be logged in the console
+
+Take into account that the output, the error and the input streams are not catchable. To do this, there are more advanced packages out there, like this one: [ExecPlan](https://github.com/ryan-self/exec-plan).
 
 ## 4. Conclusion
 
@@ -28,4 +34,3 @@ This module is just a wrapper for this answer at StackOverflow:
 [Use child_process.execSync but keep output in console](https://stackoverflow.com/questions/30134236/use-child-process-execsync-but-keep-output-in-console#answer-31104898)
 
 Thanks to the great developers that are on StackOverflow, helping every day to do our life a bit easier. Their wisdom is always an honor.
-
