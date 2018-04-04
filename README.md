@@ -22,7 +22,7 @@ const executeCommand = require("execute-command-sync");
 Start using the command like this:
 
 ```js
-  executeCommand("ls -lA", {);
+  executeCommand("ls -lA", {cwd:"/"});
   // You can do things here after the execution has finished
   // The results will be logged in the console
 ```
