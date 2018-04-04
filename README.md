@@ -9,23 +9,25 @@ This is a module for Node.js that will let you run console commands redirecting 
 
 Download the repository from NPM. To do it, type from the command line:
 
-	npm install -s execute-command-sync
+~$ `npm install -s execute-command-sync`
 
 Import in your code the module:
 
-	const executeCommand = require("execute-command-sync");
+```js
+const executeCommand = require("execute-command-sync");
+```
 
 ## 3. Usage
 
 Start using the command like this:
 
-	executeCommand("ls -lA");
+```js
+  executeCommand("ls -lA", {);
+  // You can do things here after the execution has finished
+  // The results will be logged in the console
+```
 
-	// You can do things here after the execution has finished
-
-	// The results will be logged in the console
-
-Take into account that the output, the error and the input streams are not catchable. To do this, there are more advanced packages out there, like this one: [ExecPlan](https://github.com/ryan-self/exec-plan).
+Take into account that the output, the error and the input streams are not catchable. To do this, there are more advanced packages out there, like this one: [exec-plan](https://github.com/ryan-self/exec-plan).
 
 ## 4. Conclusion
 
